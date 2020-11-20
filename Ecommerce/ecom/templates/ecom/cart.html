@@ -1,0 +1,49 @@
+{% extends "main.html" %} {% load static %} {% block content %}
+<div class="my-2 shadow">
+    <a href="" class="btn btn-outline-dark m-2"><i class="fas fa-arrow-left"></i>  Continue Shopping</a>
+
+    <div class="w-100">
+        <table class="table table-inverse w-100">
+            <thead class="thead-inverse thead-light">
+                <tr>
+                    <th>View</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-0" scope="row">
+                        <img src='{% static "images/default.jpg" %}' alt=" " width="100px " height="auto "></td>
+                    <td>ProductName</td>
+                    <td>$25.22</td>
+                    <td>2</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td class="py-0" scope="row">
+                        <img src='{% static "images/default.jpg" %}' alt=" " width="100px " height="auto "></td>
+                    <td>ProductName</td>
+                    <td>$25.22</td>
+                    <td>
+                    </td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td scope="row"><strong>Items/Total</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td><strong>20</strong></td>
+                    <td><strong>$250.00</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-right m-2">
+        <a name="" id="" class="btn m-2 btn-success" href="{% url 'checkout' %}" role="button">Continue
+                <i class="fas fa-arrow-right"></i>
+            </a>
+    </div>
+</div>{% endblock content %}
